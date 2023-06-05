@@ -1,7 +1,7 @@
 <template>
   <app-layout>
     <template #main>
-      <h1>Hello main</h1>
+      <app-form></app-form>
     </template>
     <template #footer>
       <p>Weather App</p>
@@ -10,5 +10,9 @@
 </template>
 
 <script setup>
+//layout
 import AppLayout from "./layout/AppLayout.vue";
+
+//components
+import AppForm from "./components/AppForm.vue";
 </script>
