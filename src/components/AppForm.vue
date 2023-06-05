@@ -1,7 +1,11 @@
 <template>
   <app-card class="max-w-xl mx-auto">
-    <form>
-      <app-input input-id="city" input-label="Type city:"></app-input>
+    <form class="flex flex-col items-center">
+      <app-input
+        input-id="city"
+        input-label="Type city:"
+        class="w-full"
+      ></app-input>
       <app-button>Submit</app-button>
     </form>
   </app-card>
