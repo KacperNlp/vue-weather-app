@@ -1,5 +1,5 @@
 <template>
-  <div class="my-12 grid gap-4 xl:grid-cols-2">
+  <div class="my-12 mx-auto max-w-3xl">
     <app-card v-if="store.isCitySet">
       <app-city-block-info :data="store.getCity"></app-city-block-info>
     </app-card>

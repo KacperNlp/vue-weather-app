@@ -23,6 +23,7 @@ export const useAppStore = defineStore("appStore", () => {
       Object.assign(city, data.data);
     } catch (err) {
       isNotFound.value = true;
+      Object.assign(city, {});
       console.log("Error with API! May you pass wrong param!");
     }
   };
