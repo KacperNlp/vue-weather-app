@@ -1,16 +1,16 @@
 <template>
-  <ul class="my-12 grid gap-4 xl:grid-cols-2">
-    <li v-for="result in store.getCities" :key="result.id">
-      <app-card>
-        <h3>{{ result.city }}</h3>
-        <p>{{ result.temp }} C</p>
-      </app-card>
-    </li>
-  </ul>
+  <div class="my-12 grid gap-4 xl:grid-cols-2">
+    <app-card v-if="store.isCitySet">
+      <app-city-block-info :data="store.getCity"></app-city-block-info>
+    </app-card>
+    <p v-else-if="store.isNotFound">This City doesn't exist!</p>
+    <p v-else>Sorry you have to type city!</p>
+  </div>
 </template>
 
 <script setup>
 import AppCard from "./AppCard.vue";
+import AppCityBlockInfo from "./AppCityBlockInfo.vue";
 
 //store
 import { useAppStore } from "../store/app-store.js";
