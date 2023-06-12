@@ -15,4 +15,7 @@
 ## App preview
 
 <p>Here you can see how app looks like:</p>
+<p>example of working correct result:</p>
 <img src="./App-view.PNG">
+<p>example when someone will type city/place which doesn't exist:</p>
+<img src="./wrong-type.PNG">
